@@ -57,3 +57,29 @@ print(nums);
 nums = [3,4,5];
 nums.unshift(newnum,1,2);
 print(nums);
+
+///////////////////
+// Array of objects
+///////////////////
+
+print("==========Array of objects==========");
+
+function Point(x,y) {
+    this.x = x;
+    this.y = y;
+}
+
+function displayPts(arr){
+    for(var i = 0; i < arr.length; i++) {
+        print(arr[i].x + ", " + arr[i].y);
+    }
+}
+
+var p1 = new Point(1,2);
+var p2 = new Point(3,5);
+var p3 = new Point(6,4);
+
+var points = [p2];
+points.push(p3);
+points.unshift(p1);
+displayPts(points);

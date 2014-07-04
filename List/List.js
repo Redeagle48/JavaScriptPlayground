@@ -116,6 +116,7 @@ names.append("Antonio");
 names.append("Luis");
 print(names.length());
 
+//Non-stop for because next() is preventing the increase of pos
 for(names.front(); names.currPos() < names.length(); names.next()){
     print(names.currPos());
     print(names.getElement());
